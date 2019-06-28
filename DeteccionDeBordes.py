@@ -1,3 +1,7 @@
+#SUSCRIBETE AL CANAL DE Jorge Miranda Redes Neuronales para ver videos de programacion en python y opencv para procesamiento digital d
+# imagenes , inteligencia artificial , microcontroladores dspic30F, 33F y procesamiento digital de señales teorico y practico 
+
+
 import numpy as np 
 import cv2
 #CREAR  OBJETO PARA LA ADQUISICION DE IMAGENES
