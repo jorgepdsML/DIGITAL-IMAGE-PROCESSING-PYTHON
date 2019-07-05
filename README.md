@@ -1,5 +1,6 @@
 #          DIGITAL-IMAGE-PROCESSING-PYTHON 
-En este repositorio encontraras todos los codigos relacionados a mi canal de youtube jorge miranda redes neuronales
-#relacionados a la lista de reproduccion de procesamiento digital de imagenes en python y opencv
-#todos los videos tienen su fundamento matematico relacionado a como operan los metodos que opencv nos brinda
-#para el procesamiento digital de imagenes
+
+in this repository you will find some projects that I did and I explain them in my YouTube channel to simplify how to apply the theory of digital image processing using the Python programming language with OpenCV open source library, but if you use other programming languages, This repository can allow you to learn how digital image processing algorithms work to be implemented in other languages, such as c ++, matlab, etc.
+My youtube channel:
+please , share the videos 
+https://www.youtube.com/channel/UC5u42fI0m1Sd5pWZ-fa9X9A
