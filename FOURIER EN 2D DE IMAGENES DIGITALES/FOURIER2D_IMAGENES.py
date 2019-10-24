@@ -35,7 +35,7 @@ D=D/np.max(D)
 Do=0.59
 #Creación del Filtro Ideal en 2D
 Huv=np.zeros((Nf,Nc))
-#PRIMER CREAR EL FILTRO PASA BAJO IDEAL
+#PRIMERO CREAR EL FILTRO PASA BAJO IDEAL
 for i in range(Nf):
     for j in range(Nc):
         if(D[i,j]<Do):
