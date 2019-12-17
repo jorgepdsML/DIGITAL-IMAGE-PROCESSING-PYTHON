@@ -1,0 +1,59 @@
+###################################################################
+1.-
+Ingresar una texto y contar cuantas veces se repite
+una letra especifica.
+EJEMPLO:
+	>>>ingreso = "en el amanecer al quinto dia"
+	>>>letra_especifica = "a"
+
+RESULTADO:
+	>>>4
+
+###################################################################
+2.-
+Ingresar una texto  y  dar  como  respuesta  cuantas 
+vocales posee en total.
+EJEMPLO:
+	>>>ingreso = "en el amanecer al quinto dia"
+
+RESULTADO:
+	>>>12	
+
+###################################################################
+3.-
+Ingresar una palabra y verificar si es una palabra que
+escrita al reves es identica a si misma.
+EJEMPLO:
+	>>>ingreso = "oro"
+
+RESULTADO:
+	>>>La palabra si es identica en modo inverso a si misma!
+
+EJEMPLO2:
+	>>>ingreso = "cancion"
+
+RESULTADO:
+	>>>La palabra no es identica en modo inverso a si misma!
+
+###################################################################
+4.-
+Ingresar un texto y mostrar para cada letra su cantidad
+de veces que se repite.
+EJEMPLO:
+	>>>ingreso = "en el amanecer al quinto dia"
+
+RESULTADO:
+	e - 4
+	n - 3
+	l - 2
+	a - 4
+	m - 1
+	c - 1
+	r - 1
+	q - 1
+	u - 1
+	i - 2
+	t - 1
+	o - 1
+	d - 1
+###################################################################

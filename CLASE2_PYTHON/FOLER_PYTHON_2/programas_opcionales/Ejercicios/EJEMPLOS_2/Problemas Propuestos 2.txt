@@ -1,0 +1,83 @@
+########################################################
+1.-
+Crear un rectangulo de puros caracteres '*' (asterisco)
+de 'h' altura  y 'l' lado respectivamente y  mostrarlos
+en la consola.
+
+Ejemplo:
+	h = 4
+	l = 3
+
+Resultado:
+	***
+	***
+	***
+	***
+
+########################################################
+2.-
+Mostrar en la consola un Triangulo rectangulo isosceles
+de  puros caracteres  '*'  (asteriscos)  de  altura 'h'
+tal que el lado de la altura 'h' se encuentre pegado al
+lado izquierdo de la consola.
+
+Ejemplo:
+	h = 4
+
+Resultado:
+	*
+	**
+	***
+	****
+
+########################################################
+3.- 
+Dibujar un triangulo  isosceles  de  puros   caracteres 
+'*' (asteriscos) la cual como unico dato a ingresar sea
+la altura 'h'.
+
+Ejemplo:
+	h = 5
+
+Resultado:
+	*
+       ***
+      *****
+     *******
+    *********
+
+########################################################
+4.-
+Escribir un codigo que nos pida nuestro nombre y nos lo
+devuelva encerrado en simbolos '=' donde el nombre
+estara distanciado de los simbolos '=' por sus 4 lados
+por un espacio vacio.
+
+Ejemplo:
+	nombre = 'Guillermo'
+
+Resultado:
+
+	=============
+	= Guillermo =
+	=============
+
+########################################################
+5.-
+Dibujar un triangulo  isosceles  cuyos limites deben de
+ser el simbolo '*' (asterisco) y que su  interior  debe
+de estar vacio. El unico dato a ingresar debe de ser su
+base la cual debe de ser siempre un numero impar, si se
+ingresa un numero par, debe de pedir nuevamente otro
+numero que sea impar.
+
+Ejemplo:
+	b = 9
+
+Resultado:
+	*
+       * *
+      *   *
+     *     *
+    *********
+########################################################

@@ -1,0 +1,48 @@
+########################################################
+1.-
+Crear un rectangulo de puros caracteres '*' (asterisco)
+de 'h' altura  y 'l' lado respectivamente y  mostrarlos
+en la consola.
+
+Ejemplo:
+	h = 4
+	l = 3
+
+Resultado:
+	***
+	***
+	***
+	***
+
+########################################################
+2.-
+Mostrar en la consola un Triangulo rectangulo isosceles
+de  puros caracteres  '*'  (asteriscos)  de  altura 'h'
+tal que el lado de la altura 'h' se encuentre pegado al
+lado izquierdo de la consola.
+
+Ejemplo:
+	h = 4
+
+Resultado:
+	*
+	**
+	***
+	****
+
+########################################################
+3.- 
+Dibujar un triangulo  isosceles  de  puros   caracteres 
+'*' (asteriscos) la cual como unico dato a ingresar sea
+la altura 'h'.
+
+Ejemplo:
+	h = 5
+
+Resultado:
+	*
+       ***
+      *****
+     *******
+    *********
+
