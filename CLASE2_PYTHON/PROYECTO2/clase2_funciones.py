@@ -7,20 +7,25 @@ humedad=[]
 #acceder a cada linea del contenido del archivo de texto
 print("IMPRIMIR CADA LINEA")
 time.sleep(2)
+cont=0
 for linea in archivo:
-    #determinar cuantos elementos hay en cada linea
-    Nl=len(linea)
-    linea_n=linea[0:Nl-1]
-    #crear lista_int
-    lista_int=linea_n.split(",")
-    print(lista_int)
-    #acceder a cada posición y almacenarlo en su respectiva lista
-    #almacenar la temperatura en la lista temperatura
-    temperatura.append(lista_int[0])
-    #almacenar la humedad en la lista humedad
-    humedad.append(lista_int[1])
-    time.sleep(3)
-
+    if cont<1:
+        #no leer nada
+        pass
+    else:
+        # determinar cuantos elementos hay en cada linea
+        Nl = len(linea)
+        linea_n = linea[0:Nl - 1]
+        # crear lista_int
+        lista_int = linea_n.split(",")
+        print(lista_int)
+        # acceder a cada posición y almacenarlo en su respectiva lista
+        # almacenar la temperatura en la lista temperatura
+        temperatura.append(float(lista_int[0]))
+        # almacenar la humedad en la lista humedad
+        humedad.append(float(lista_int[1]))
+        time.sleep(1)
+    cont = cont + 1
 #cerrar el recurso del manejo de archivo de texto
 archivo.close()
 print(temperatura)
