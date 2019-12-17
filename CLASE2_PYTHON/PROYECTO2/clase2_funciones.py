@@ -30,3 +30,19 @@ for linea in archivo:
 archivo.close()
 print(temperatura)
 print(humedad)
+#CREAR FUNCIONES
+def promedio(x):
+    #determinar el tamaño de lo que ingresa
+    N=len(x)
+    suma=0
+    #hallar la suma
+    for var in x:
+        suma=suma+var
+    #dividir entre la cantidad de elementos
+    u=suma/N
+    #retornar el promedio
+    return u
+#utilizando la función promedio
+media_temp=promedio(temperatura)
+media_hum=promedio(humedad)
+print("PROMEDIO DE TEMPERATURA",media_temp,"PROMEDIO DE HUMEDAD",med
