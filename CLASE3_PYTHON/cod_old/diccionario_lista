@@ -1,0 +1,17 @@
+#importar el modulo time
+N1=input("INGRESAR LA ALTURA")
+N2=input("INGREGAR LA BASE")
+#convertir de str a int
+N1=int(N1)
+N2=int(N2)
+#verificar que N2>0 Y N1>0
+assert (N1>0 and N2>0), print("COLOCAR A AMBOS NUMEROS UN VALOR POSITIVO")
+print("AMBOS VALORES SON POSITIVOS")
+
+for altura in range(N1) :
+
+    for base in range(N2):
+        print('*',end=' ')
+    print('',end='\n')
+
+
