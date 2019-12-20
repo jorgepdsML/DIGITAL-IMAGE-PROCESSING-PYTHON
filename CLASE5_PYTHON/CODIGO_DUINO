@@ -1,0 +1,22 @@
+//declarar variable del tipo char
+char dato;
+void setup() 
+{
+  //CONFIGURAR LA COMUNICACIÓN SERIAL DE ARDUINO
+  Serial.begin(9600);
+  //CONFIGURAR EL PIN 12 DEL DIODO LED COMO SALIDA OUTPUT
+  pinMode(12,OUTPUT);
+}
+void loop() 
+{
+      if (Serial.available()>0)
+      {       
+         dato=Serial.read();
+         if (dato=='A')
+         { digitalWrite(12,HIGH);
+          }
+          if (dato=='B')
+          { digitalWrite(12,LOW);
+            }
+       }
+}
