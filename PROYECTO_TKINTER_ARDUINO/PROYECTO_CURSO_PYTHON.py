@@ -35,17 +35,20 @@ def conectar():
         puerto_serial.baudrate=int(Baudios)
         print(Baudios,len(Baudios),Puerto,len(Puerto))
         puerto_serial.open()
-        print("BUENA CONEXIÓN")
+        texto_con.delete(1.0, END)
+        texto_con.insert(1.0, "CONECTADO")
         Estado_conexion=1
     except serial.SerialException:
         Estado_conexion=0
         puerto_serial.close()
-        print("ERROR POR CONEXIÓN SERIAL")
+        texto_con.delete(1.0, END)
+        texto_con.insert(1.0, "ERROR EN LA CONEXIÓN")
     except :
         Estado_conexion=0
         puerto_serial.close()
         #error en la conexión
-        print("ERROR EN LA CONEXIÓN ")
+        texto_con.delete(1.0, END)
+        texto_con.insert(1.0, "ERROR EN LA CONEXIÓN")
     finally:
         #CERRAR RECURSO DE COMUNICACIÓN SERIAL
         pass
@@ -58,6 +61,8 @@ def desconectar():
         FLAGG=0
         #PONER A CERO EL ESTADO DE CONEXIÓN
         print("SE HA DESCONECTADO")
+        texto_con.delete(1.0, END)
+        texto_con.insert(1.0, "DESCONECTADO")
     else:
         print("NO HUBO CONEXIÓN PREVIA")
     Estado_conexion = 0
@@ -68,17 +73,21 @@ def configurar():
     #CONSEGUIR EL VALOR ACTUAL DE LOS TEXTOS DE BAUDIOS Y PUERTO SERIAL
     Baudios=texto2.get(1.0,END)
     Puerto=texto1.get(1.0,END)
-    print("CONFIGURADO")
+    texto_con.delete(1.0,END)
+    texto_con.insert(1.0,"CONFIGURADO")
 def registrar():
     #función que realizara el inicio del registro de las variables
     #de temperatura y humedad
     global Estado_registro
     Estado_registro=1
+    texto_con.delete(1.0, END)
+    texto_con.insert(1.0, "REGISTRANDO")
 def detener():
     # función para detener el registro de temperatura y humedad
     global Estado_registro
     Estado_registro=0
-
+    texto_con.delete(1.0, END)
+    texto_con.insert(1.0, "STOP")
 def exportar():
     #función para exportar la data en un archivo especificado por un nombre
     pass
@@ -111,6 +120,9 @@ texto2.place(x=20+xo,y=400-y1)
 boton_desconectar=Button(interfaz,text="DESCONECTAR",bg="brown",fg="white",command=desconectar)
 boton_desconectar.place(x=250,y=400)
 #-------------------------------------
+#ELEMENTOS PARA VISUALIZAR RESPUESTA DE LA CONEXIÓN
+texto_con=Text(interfaz,width=25,height=1)
+texto_con.place(x=200,y=370)
 #ELEMENTOS PARA EL INICIO DE REGISTRO
 inicio_reg=Button(interfaz,text="INICIO DE REGISTRO",bg="brown",fg="white",command=registrar)
 inicio_reg.place(x=250,y=170)
