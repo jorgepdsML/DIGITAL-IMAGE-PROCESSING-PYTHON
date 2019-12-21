@@ -1,33 +1,30 @@
 from tkinter import *
 import serial
 from PIL import ImageTk,Image
-imagen=Image.open("imagen1.jpg")
-#imagen=imagen.resize((40,40))
-print(type(imagen))
 interfaz=Tk()
-    #geometry()
+#geometry()
 interfaz.geometry("500x500")
-    #metodo title()
+#metodo title()
 interfaz.title("PROYECTO ARDUINO Y PYTHON")
-#crear canvas
-canvas=Canvas(interfaz,width=30,height=30)
-canvas.place(x=100,y=20)
+#CARGAR IMAGEN CON FORMATO png
 load=Image.open("hola2.png")
+#reducir el tamaño de la imagen
 load=load.resize((100,100))
+#CREAR OBJETO PARA MOSTRAR LA IMAGEN EN EL TKINTER
 img=ImageTk.PhotoImage(load)
 lugar=Label(image=img)
+#posicionar la imagen dentro de la interfaz grafica
 lugar.place(x=200,y=50)
-#canvas.create_image(20,20,anchor=NW,image=img)
-#Captura imagen
-#mostar imagen en la interfaz grafica
 #DEFINCIÓN DE CONSTANTES
 Baudios=9600
 Puerto="COM4"
 Estado_registro=0
 Estado_conexion=0
 FLAGG=0
+#CREAR objeto para la comunicación serial
 puerto_serial = serial.Serial()
 puerto_serial.timeout=3
+#-definir funciones para cada boton
 def conectar():
     global Estado_conexion,FLAGG,puerto_serial
     FLAGG=1
@@ -169,5 +166,4 @@ while True:
             break
             pass
 print("FIN CODIGO")
-
 
