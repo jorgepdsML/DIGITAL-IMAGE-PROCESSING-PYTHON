@@ -155,7 +155,7 @@ while True:
                     dato=puerto_serial.read()
                     dato=dato.decode()
                     #se registrara la temperatura
-                    if dato=="-":
+                    if dato=="t":
                         temp.delete(1.0, END)
                         #LEER HASTA ENCONTRAR EL SIMBOLO "*"
                         datox=puerto_serial.read_until("*".encode("utf-8"),6)
@@ -166,9 +166,17 @@ while True:
                         #MOSTAR EN EL TEXTO
                         temp.insert(1.0,datox)
                     #se registrara la humedad relativa
-                    elif dato=="+":
+                    elif dato=="h":
                         #LEER HASTA ENCONTRAR EL SIMBOLO "h"
-                        pass
+                        hum.delete(1.0, END)
+                        # LEER HASTA ENCONTRAR EL SIMBOLO "-"
+                        datox = puerto_serial.read_until("-".encode("utf-8"), 6)
+                        datox = datox.decode()
+                        # LEER TODO MENOS EL SIMBOLO "*"
+                        datox = datox[0:len(datox) - 1]
+                        print(datox)
+                        # MOSTAR EN EL TEXTO
+                        hum.insert(1.0, datox)
 
             #o esta en estado de detener el registro de datos
             else:
@@ -178,4 +186,3 @@ while True:
             break
             pass
 print("FIN CODIGO")
-
