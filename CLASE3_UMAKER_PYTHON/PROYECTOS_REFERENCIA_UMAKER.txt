@@ -1,0 +1,44 @@
+#numpy y opencv
+#-----------------------
+GRUPO 1: PDI
+FRANK BRITO
+DIANA GUEVARA
+ERICK PARI
+CARLOS SANTAMARIA
+#paho-mqtt
+#-------------------------------
+GRUPO 2: IOT
+ABEL HINOSTROZA
+SEBASTIAN ZAMATA
+#--------------------------------
+#paho-mqtt
+GRUPO 3:IOT 2
+ANTONY AREVALO
+PAMELA LUQUE
+#----------------------------------
+#scikit 
+GRUPO 4:ANALISIS DE DATOS(ML)
+CRISTINA CASTRO
+KEVIN VICAÑA
+#------------------------------
+#opencv, numpy , matplotlib 
+GRUPO 5: PDI 2
+CESAR ATUSPARIA
+GERALD ANAYA
+RAMSES REYMUNDO
+JUAN DIEGO VALVERDE
+
+#------------------------------------------------
+#sqlite3 ,pandas, tkinter (para interfaz grafica)
+GRUPO 6 : BASE DE DATOS E INTERFAZ GRAFICA
+          VENTA DE ALGUN SERVICIO O PRODUCTO (OPCIONAL)
+LUIS COLOMA
+ROSA PEREA 
+#-----------------------------------------------------------
+#dialogflow , requests (consumo de  APIs existentes)
+#pytorch , keras(API) , tensorflow(backend)
+#scikit 
+GRUPO 7 : IA , ML
+EDGAR BARAZORDA
+ALDAIR MALLMA
+#---------------------------------------------------------------
