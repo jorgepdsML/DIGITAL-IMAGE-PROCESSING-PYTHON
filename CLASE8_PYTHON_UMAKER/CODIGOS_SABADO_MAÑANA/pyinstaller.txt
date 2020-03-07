@@ -1,0 +1,20 @@
+#acceder a la ruta donde se encuentra sus archivos de python
+para instalar el pyinstaller
+#-----pip install pyinstaller
+para mostrar las caracteristicas del pyinstaller
+#-----pip show pyinstaller
+#-------uso de pyinstaller
+pyinstaller --onefile nombre.py
+#-------sin consola (deshabilitar el antivirus)
+pysinstaller --windowed --onefile nombre.py
+#aplicativo con icon
+pyinstaller --onefile --icon=my.ico my.py
+#para agregar todo los archivos en un solo ejecutable
+#setup.exe 
+#-------CREACIÓN DE ARCHIVO DE INSTALACIÓN
+NSIS (Nullsoft Scriptable Install System)
+#primero crear un archivo zip
+#seleccionar el archivo zip
+#darle un nombre
+#indicarle la ruta de instalacipon
+#generar el setup.exe
